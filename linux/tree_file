@@ -1,0 +1,846 @@
+/root
+├── Desktop
+├── Documents
+├── Downloads
+├── Music
+├── Pictures
+├── Public
+├── Pwn
+│   ├── linux_server
+│   └── linux_server64
+├── share -> /mnt/hgfs/share
+├── Templates
+├── Tools
+│   ├── IDA
+│   │   ├── linux_server
+│   │   └── linux_server64
+│   ├── libc-database
+│   │   ├── add
+│   │   ├── common
+│   │   │   └── libc.sh
+│   │   ├── db
+│   │   ├── download
+│   │   ├── dump
+│   │   ├── find
+│   │   ├── get
+│   │   ├── identify
+│   │   ├── libs
+│   │   └── README.md
+│   ├── owasp-zsc
+│   │   ├── CHANGELOG.md
+│   │   ├── core
+│   │   │   ├── alert.py
+│   │   │   ├── cli.py
+│   │   │   ├── color.py
+│   │   │   ├── color.pyc
+│   │   │   ├── commands.py
+│   │   │   ├── compatible.py
+│   │   │   ├── compatible.pyc
+│   │   │   ├── controller.py
+│   │   │   ├── encode.py
+│   │   │   ├── file_out.py
+│   │   │   ├── get_input.py
+│   │   │   ├── __init__.py
+│   │   │   ├── __init__.pyc
+│   │   │   ├── obfuscate.py
+│   │   │   ├── opcoder.py
+│   │   │   ├── run.py
+│   │   │   ├── stack.py
+│   │   │   ├── start.py
+│   │   │   ├── start.pyc
+│   │   │   └── update.py
+│   │   ├── doc
+│   │   │   ├── owasp-zsc.epub
+│   │   │   ├── owasp-zsc.mobi
+│   │   │   ├── owasp-zsc.pdf
+│   │   │   └── README.md
+│   │   ├── installer.py
+│   │   ├── lib
+│   │   │   ├── encoder
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── javascript
+│   │   │   │   │   ├── base64.py
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── jsfuck.py
+│   │   │   │   │   ├── rot13.py
+│   │   │   │   │   ├── simple_ascii.py
+│   │   │   │   │   ├── simple_base64_rev.py
+│   │   │   │   │   ├── simple_hex.py
+│   │   │   │   │   └── simple_hex_rev.py
+│   │   │   │   ├── linux_x86
+│   │   │   │   │   ├── add_random.py
+│   │   │   │   │   ├── add_yourvalue.py
+│   │   │   │   │   ├── dec.py
+│   │   │   │   │   ├── dec_timesyouwant.py
+│   │   │   │   │   ├── inc.py
+│   │   │   │   │   ├── inc_timesyouwant.py
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── mix_all.py
+│   │   │   │   │   ├── sub_random.py
+│   │   │   │   │   ├── sub_yourvalue.py
+│   │   │   │   │   ├── xor_random.py
+│   │   │   │   │   └── xor_yourvalue.py
+│   │   │   │   ├── osx_x86
+│   │   │   │   │   ├── add_random.py
+│   │   │   │   │   ├── add_yourvalue.py
+│   │   │   │   │   ├── dec.py
+│   │   │   │   │   ├── dec_timesyouwant.py
+│   │   │   │   │   ├── inc.py
+│   │   │   │   │   ├── inc_timesyouwant.py
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── sub_random.py
+│   │   │   │   │   ├── sub_yourvalue.py
+│   │   │   │   │   ├── xor_random.py
+│   │   │   │   │   └── xor_yourvalue.py
+│   │   │   │   ├── perl
+│   │   │   │   │   ├── base64.py
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── simple_ascii.py
+│   │   │   │   │   ├── simple_base64_rev.py
+│   │   │   │   │   ├── simple_hex.py
+│   │   │   │   │   └── simple_hex_rev.py
+│   │   │   │   ├── php
+│   │   │   │   │   ├── base64.py
+│   │   │   │   │   ├── base64_rev.py
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── rot13.py
+│   │   │   │   │   ├── simple_ascii.py
+│   │   │   │   │   ├── simple_hex.py
+│   │   │   │   │   └── simple_hex_rev.py
+│   │   │   │   ├── python
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── rot13.py
+│   │   │   │   │   ├── simple_ascii.py
+│   │   │   │   │   ├── simple_base64_rev.py
+│   │   │   │   │   ├── simple_hex.py
+│   │   │   │   │   └── simple_hex_rev.py
+│   │   │   │   ├── ruby
+│   │   │   │   │   ├── base64.py
+│   │   │   │   │   ├── base64_rev.py
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── rot13.py
+│   │   │   │   │   ├── simple_ascii.py
+│   │   │   │   │   ├── simple_hex.py
+│   │   │   │   │   └── simple_hex_rev.py
+│   │   │   │   └── windows_x86
+│   │   │   │       ├── add_random.py
+│   │   │   │       ├── add_yourvalue.py
+│   │   │   │       ├── dec.py
+│   │   │   │       ├── dec_timesyouwant.py
+│   │   │   │       ├── inc.py
+│   │   │   │       ├── inc_timesyouwant.py
+│   │   │   │       ├── __init__.py
+│   │   │   │       ├── sub_random.py
+│   │   │   │       ├── sub_yourvalue.py
+│   │   │   │       ├── xor_random.py
+│   │   │   │       └── xor_yourvalue.py
+│   │   │   ├── generator
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── linux_x86
+│   │   │   │   │   ├── chmod.py
+│   │   │   │   │   ├── dir_create.py
+│   │   │   │   │   ├── download_execute.py
+│   │   │   │   │   ├── download.py
+│   │   │   │   │   ├── exec.py
+│   │   │   │   │   ├── file_create.py
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── script_executor.py
+│   │   │   │   │   ├── system.py
+│   │   │   │   │   └── write.py
+│   │   │   │   ├── osx_x86
+│   │   │   │   │   ├── chmod.py
+│   │   │   │   │   ├── exec.py
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   └── system.py
+│   │   │   │   ├── windows_x86
+│   │   │   │   │   ├── add_admin.py
+│   │   │   │   │   ├── create_file.py
+│   │   │   │   │   ├── dir_create.py
+│   │   │   │   │   ├── disable_firewall.py
+│   │   │   │   │   ├── download_exec.py
+│   │   │   │   │   ├── download_tofile.py
+│   │   │   │   │   ├── exec.py
+│   │   │   │   │   └── __init__.py
+│   │   │   │   └── windows_x86_64
+│   │   │   │       ├── exec-intel.py
+│   │   │   │       ├── exec.py
+│   │   │   │       └── __init__.py
+│   │   │   ├── __init__.py
+│   │   │   ├── opcoder
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── linux_x86.py
+│   │   │   │   ├── osx_x86.py
+│   │   │   │   ├── windows_x86_64.py
+│   │   │   │   └── windows_x86.py
+│   │   │   └── shell_storm_api
+│   │   │       ├── grab.py
+│   │   │       └── __init__.py
+│   │   ├── LICENSE.md
+│   │   ├── module
+│   │   │   ├── __init__.py
+│   │   │   ├── readline_osx
+│   │   │   │   ├── readline.py
+│   │   │   │   ├── readline.so
+│   │   │   │   └── README.md
+│   │   │   └── readline_windows
+│   │   │       ├── __init__.py
+│   │   │       ├── pyreadline
+│   │   │       │   ├── clipboard
+│   │   │       │   │   ├── __init__.py
+│   │   │       │   │   ├── ironpython_clipboard.py
+│   │   │       │   │   ├── no_clipboard.py
+│   │   │       │   │   └── win32_clipboard.py
+│   │   │       │   ├── configuration
+│   │   │       │   │   ├── pyreadlineconfig.ini
+│   │   │       │   │   └── startup.py
+│   │   │       │   ├── console
+│   │   │       │   │   ├── ansi.py
+│   │   │       │   │   ├── console_attributes.py
+│   │   │       │   │   ├── consolebase.py
+│   │   │       │   │   ├── console.py
+│   │   │       │   │   ├── event.py
+│   │   │       │   │   ├── __init__.py
+│   │   │       │   │   └── ironpython_console.py
+│   │   │       │   ├── error.py
+│   │   │       │   ├── get_doc.py
+│   │   │       │   ├── __init__.py
+│   │   │       │   ├── keysyms
+│   │   │       │   │   ├── common.py
+│   │   │       │   │   ├── __init__.py
+│   │   │       │   │   ├── ironpython_keysyms.py
+│   │   │       │   │   ├── keysyms.py
+│   │   │       │   │   └── winconstants.py
+│   │   │       │   ├── lineeditor
+│   │   │       │   │   ├── history.py
+│   │   │       │   │   ├── __init__.py
+│   │   │       │   │   ├── lineobj.py
+│   │   │       │   │   └── wordmatcher.py
+│   │   │       │   ├── logger.py
+│   │   │       │   ├── logserver.py
+│   │   │       │   ├── modes
+│   │   │       │   │   ├── basemode.py
+│   │   │       │   │   ├── emacs.py
+│   │   │       │   │   ├── __init__.py
+│   │   │       │   │   ├── notemacs.py
+│   │   │       │   │   └── vi.py
+│   │   │       │   ├── py3k_compat.py
+│   │   │       │   ├── release.py
+│   │   │       │   ├── rlmain.py
+│   │   │       │   ├── test
+│   │   │       │   │   ├── common.py
+│   │   │       │   │   ├── __init__.py
+│   │   │       │   │   ├── test_emacs.py
+│   │   │       │   │   ├── test_history.py
+│   │   │       │   │   ├── test_lineeditor.py
+│   │   │       │   │   └── test_vi.py
+│   │   │       │   └── unicode_helper.py
+│   │   │       ├── readline.py
+│   │   │       └── README.md
+│   │   ├── readme.md
+│   │   ├── uninstaller.py
+│   │   ├── version
+│   │   └── zsc.py
+│   ├── peda
+│   │   ├── lib
+│   │   │   ├── config.py
+│   │   │   ├── nasm.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── config.cpython-38.pyc
+│   │   │   │   ├── nasm.cpython-38.pyc
+│   │   │   │   ├── shellcode.cpython-38.pyc
+│   │   │   │   ├── skeleton.cpython-38.pyc
+│   │   │   │   └── utils.cpython-38.pyc
+│   │   │   ├── shellcode.py
+│   │   │   ├── six.py
+│   │   │   ├── skeleton.py
+│   │   │   └── utils.py
+│   │   ├── LICENSE
+│   │   ├── peda.py
+│   │   ├── python23-compatibility.md
+│   │   ├── README
+│   │   └── README.md
+│   └── pwndbg
+│       ├── caps
+│       │   ├── arguments_getenv.png
+│       │   ├── arguments_memcpy.png
+│       │   ├── arguments_sigsetjmp.png
+│       │   ├── arguments_strcpy.png
+│       │   ├── arguments_syscall.png
+│       │   ├── arguments_xtrace_init.png
+│       │   ├── best.png
+│       │   ├── config.png
+│       │   ├── context.png
+│       │   ├── context_splitting.png
+│       │   ├── disasm_taken_after.png
+│       │   ├── disasm_taken_before.png
+│       │   ├── disasm_taken_folded.png
+│       │   ├── disasn_taken_false.png
+│       │   ├── emulate_vs_disasm.png
+│       │   ├── emulation_plt.png
+│       │   ├── emulation_rop.png
+│       │   ├── fake_fast.png
+│       │   ├── heap_arena.png
+│       │   ├── heap_bins.png
+│       │   ├── heap_fastbins.png
+│       │   ├── heap_heap2.png
+│       │   ├── heap_heap.png
+│       │   ├── heap_largebins.png
+│       │   ├── heap_mallocchunk.png
+│       │   ├── heap_mp.png
+│       │   ├── heap_smallbins.png
+│       │   ├── heap_topchunk.png
+│       │   ├── heap_unsorted.png
+│       │   ├── ida_comments.png
+│       │   ├── ida_function.png
+│       │   ├── ida_integration.png
+│       │   ├── leakfind.png
+│       │   ├── procinfo.png
+│       │   ├── qemu_gef.png
+│       │   ├── qemu_peda.png
+│       │   ├── qemu_pwndbg.png
+│       │   ├── qemu_vanilla.png
+│       │   ├── rop_grep.png
+│       │   ├── search.png
+│       │   ├── telescope_collapsed.png
+│       │   ├── telescope.png
+│       │   ├── theme.png
+│       │   ├── vmmap2.png
+│       │   ├── vmmap_pc.png
+│       │   ├── vmmap.png
+│       │   ├── vmmap_register.png
+│       │   ├── vmmap_stack.png
+│       │   └── windbg.png
+│       ├── DEVELOPING.md
+│       ├── docs
+│       │   ├── commands
+│       │   │   ├── arm
+│       │   │   │   └── cpsr.md
+│       │   │   ├── config
+│       │   │   │   ├── configfile.md
+│       │   │   │   ├── config.md
+│       │   │   │   ├── themefile.md
+│       │   │   │   └── theme.md
+│       │   │   ├── dev
+│       │   │   │   ├── bugreport.md
+│       │   │   │   ├── reinit_pwndbg.md
+│       │   │   │   ├── reload.md
+│       │   │   │   └── version.md
+│       │   │   ├── disas
+│       │   │   │   ├── emulate.md
+│       │   │   │   ├── nearpc.md
+│       │   │   │   └── pdisass.md
+│       │   │   ├── elfinspection
+│       │   │   │   ├── auxv.md
+│       │   │   │   ├── checksec.md
+│       │   │   │   ├── elfheader.md
+│       │   │   │   ├── got.md
+│       │   │   │   ├── gotplt.md
+│       │   │   │   ├── plt.md
+│       │   │   │   ├── rop.md
+│       │   │   │   └── ropper.md
+│       │   │   ├── gdbinit
+│       │   │   │   ├── entry_point.md
+│       │   │   │   ├── init.md
+│       │   │   │   ├── libs.md
+│       │   │   │   ├── main.md
+│       │   │   │   └── sstart.md
+│       │   │   ├── heap
+│       │   │   │   ├── arena.md
+│       │   │   │   ├── arenas.md
+│       │   │   │   ├── bins.md
+│       │   │   │   ├── fastbins.md
+│       │   │   │   ├── find_fake_fast.md
+│       │   │   │   ├── heap.md
+│       │   │   │   ├── largebins.md
+│       │   │   │   ├── malloc_chunk.md
+│       │   │   │   ├── mp.md
+│       │   │   │   ├── smallbins.md
+│       │   │   │   ├── tcachebins.md
+│       │   │   │   ├── tcache.md
+│       │   │   │   ├── top_chunk.md
+│       │   │   │   ├── unsortedbin.md
+│       │   │   │   └── vis_heap_chunks.md
+│       │   │   ├── ida
+│       │   │   │   ├── j.md
+│       │   │   │   └── save_ida.md
+│       │   │   ├── leaks
+│       │   │   │   ├── leakfind.md
+│       │   │   │   └── probeleak.md
+│       │   │   ├── misc
+│       │   │   │   ├── distance.md
+│       │   │   │   ├── down.md
+│       │   │   │   ├── errno.md
+│       │   │   │   ├── pwndbg.md
+│       │   │   │   ├── r2.md
+│       │   │   │   └── up.md
+│       │   │   ├── navigation
+│       │   │   │   ├── entry.md
+│       │   │   │   ├── nextcall.md
+│       │   │   │   ├── nextjmp.md
+│       │   │   │   ├── nextproginstr.md
+│       │   │   │   ├── nextret.md
+│       │   │   │   ├── nextsyscall.md
+│       │   │   │   ├── start.md
+│       │   │   │   ├── stepover.md
+│       │   │   │   ├── stepret.md
+│       │   │   │   └── stepsyscall.md
+│       │   │   ├── peda
+│       │   │   │   ├── getfile.md
+│       │   │   │   ├── getpid.md
+│       │   │   │   ├── xinfo.md
+│       │   │   │   └── xuntil.md
+│       │   │   ├── procinfo
+│       │   │   │   ├── args
+│       │   │   │   │   ├── argc.md
+│       │   │   │   │   ├── argv.md
+│       │   │   │   │   └── envp.md
+│       │   │   │   ├── aslr.md
+│       │   │   │   ├── canary.md
+│       │   │   │   ├── context.md
+│       │   │   │   ├── dt.md
+│       │   │   │   ├── dumpargs.md
+│       │   │   │   ├── fsbase.md
+│       │   │   │   ├── gsbase.md
+│       │   │   │   ├── hexdump.md
+│       │   │   │   ├── pid.md
+│       │   │   │   ├── piebase.md
+│       │   │   │   ├── procinfo.md
+│       │   │   │   ├── regs.md
+│       │   │   │   ├── retaddr.md
+│       │   │   │   ├── search.md
+│       │   │   │   ├── stack.md
+│       │   │   │   ├── telescope.md
+│       │   │   │   └── vmmap
+│       │   │   │       ├── vmmap_add.md
+│       │   │   │       ├── vmmap_clear.md
+│       │   │   │       ├── vmmap_load.md
+│       │   │   │       └── vmmap.md
+│       │   │   ├── statemod
+│       │   │   │   ├── breakrva.md
+│       │   │   │   ├── memfrob.md
+│       │   │   │   └── xor.md
+│       │   │   └── windbg
+│       │   │       ├── bc.md
+│       │   │       ├── bd.md
+│       │   │       ├── be.md
+│       │   │       ├── bl.md
+│       │   │       ├── bp.md
+│       │   │       ├── da.md
+│       │   │       ├── db.md
+│       │   │       ├── dc.md
+│       │   │       ├── dd.md
+│       │   │       ├── dds.md
+│       │   │       ├── dq.md
+│       │   │       ├── ds.md
+│       │   │       ├── dw.md
+│       │   │       ├── eb.md
+│       │   │       ├── ed.md
+│       │   │       ├── eq.md
+│       │   │       ├── ew.md
+│       │   │       ├── eza.md
+│       │   │       ├── ez.md
+│       │   │       ├── go.md
+│       │   │       ├── k.md
+│       │   │       ├── ln.md
+│       │   │       ├── pc.md
+│       │   │       ├── peb.md
+│       │   │       └── u.md
+│       │   ├── gdb
+│       │   │   └── __init__.py
+│       │   ├── index.md
+│       │   ├── Makefile
+│       │   ├── requirements.txt
+│       │   └── source
+│       │       ├── api
+│       │       │   ├── abi.rst
+│       │       │   ├── android.rst
+│       │       │   ├── arch.rst
+│       │       │   ├── arguments.rst
+│       │       │   ├── argv.rst
+│       │       │   ├── auxv.rst
+│       │       │   ├── chain.rst
+│       │       │   ├── config.rst
+│       │       │   ├── dt.rst
+│       │       │   ├── elf.rst
+│       │       │   ├── elftypes.rst
+│       │       │   ├── enhance.rst
+│       │       │   ├── events.rst
+│       │       │   ├── file.rst
+│       │       │   ├── gcc.rst
+│       │       │   ├── generate.sh
+│       │       │   ├── gitver.rst
+│       │       │   ├── hexdump.rst
+│       │       │   ├── ida.rst
+│       │       │   ├── info.rst
+│       │       │   ├── inthook.rst
+│       │       │   ├── linkmap.rst
+│       │       │   ├── malloc.rst
+│       │       │   ├── memoize.rst
+│       │       │   ├── memory.rst
+│       │       │   ├── net.rst
+│       │       │   ├── next.rst
+│       │       │   ├── proc.rst
+│       │       │   ├── prompt.rst
+│       │       │   ├── qemu.rst
+│       │       │   ├── regs.rst
+│       │       │   ├── remote.rst
+│       │       │   ├── search.rst
+│       │       │   ├── stack.rst
+│       │       │   ├── stdio.rst
+│       │       │   ├── strings.rst
+│       │       │   ├── symbol.rst
+│       │       │   ├── typeinfo.rst
+│       │       │   ├── ui.rst
+│       │       │   ├── vmmap.rst
+│       │       │   └── which.rst
+│       │       ├── api.rst
+│       │       ├── commands
+│       │       │   ├── aslr.rst
+│       │       │   ├── hexdump.rst
+│       │       │   ├── search.rst
+│       │       │   ├── stack.rst
+│       │       │   └── telescope.rst
+│       │       ├── commands.rst
+│       │       ├── conf.py
+│       │       └── index.rst
+│       ├── FEATURES.md
+│       ├── gdbinit.py
+│       ├── ida_script.py
+│       ├── LICENSE.md
+│       ├── mkdocs.yml
+│       ├── profiling
+│       │   ├── benchmark.sh
+│       │   ├── profile.sh
+│       │   └── test.c
+│       ├── pwndbg
+│       │   ├── abi.py
+│       │   ├── android.py
+│       │   ├── arch.py
+│       │   ├── arguments.py
+│       │   ├── argv.py
+│       │   ├── auxv.py
+│       │   ├── chain.py
+│       │   ├── color
+│       │   │   ├── backtrace.py
+│       │   │   ├── chain.py
+│       │   │   ├── context.py
+│       │   │   ├── disasm.py
+│       │   │   ├── enhance.py
+│       │   │   ├── hexdump.py
+│       │   │   ├── __init__.py
+│       │   │   ├── lexer.py
+│       │   │   ├── memory.py
+│       │   │   ├── message.py
+│       │   │   ├── nearpc.py
+│       │   │   ├── __pycache__
+│       │   │   │   ├── backtrace.cpython-38.pyc
+│       │   │   │   ├── chain.cpython-38.pyc
+│       │   │   │   ├── context.cpython-38.pyc
+│       │   │   │   ├── disasm.cpython-38.pyc
+│       │   │   │   ├── enhance.cpython-38.pyc
+│       │   │   │   ├── hexdump.cpython-38.pyc
+│       │   │   │   ├── __init__.cpython-38.pyc
+│       │   │   │   ├── lexer.cpython-38.pyc
+│       │   │   │   ├── memory.cpython-38.pyc
+│       │   │   │   ├── message.cpython-38.pyc
+│       │   │   │   ├── nearpc.cpython-38.pyc
+│       │   │   │   ├── syntax_highlight.cpython-38.pyc
+│       │   │   │   ├── telescope.cpython-38.pyc
+│       │   │   │   └── theme.cpython-38.pyc
+│       │   │   ├── syntax_highlight.py
+│       │   │   ├── telescope.py
+│       │   │   └── theme.py
+│       │   ├── commands
+│       │   │   ├── argv.py
+│       │   │   ├── aslr.py
+│       │   │   ├── asm.py
+│       │   │   ├── auxv.py
+│       │   │   ├── canary.py
+│       │   │   ├── checksec.py
+│       │   │   ├── config.py
+│       │   │   ├── context.py
+│       │   │   ├── cpsr.py
+│       │   │   ├── defcon.py
+│       │   │   ├── dt.py
+│       │   │   ├── dumpargs.py
+│       │   │   ├── elf.py
+│       │   │   ├── gdbinit.py
+│       │   │   ├── got.py
+│       │   │   ├── heap.py
+│       │   │   ├── hexdump.py
+│       │   │   ├── ida.py
+│       │   │   ├── __init__.py
+│       │   │   ├── leakfind.py
+│       │   │   ├── misc.py
+│       │   │   ├── nearpc.py
+│       │   │   ├── next.py
+│       │   │   ├── peda.py
+│       │   │   ├── pie.py
+│       │   │   ├── probeleak.py
+│       │   │   ├── procinfo.py
+│       │   │   ├── __pycache__
+│       │   │   │   ├── argv.cpython-38.pyc
+│       │   │   │   ├── aslr.cpython-38.pyc
+│       │   │   │   ├── auxv.cpython-38.pyc
+│       │   │   │   ├── canary.cpython-38.pyc
+│       │   │   │   ├── checksec.cpython-38.pyc
+│       │   │   │   ├── config.cpython-38.pyc
+│       │   │   │   ├── context.cpython-38.pyc
+│       │   │   │   ├── cpsr.cpython-38.pyc
+│       │   │   │   ├── dt.cpython-38.pyc
+│       │   │   │   ├── dumpargs.cpython-38.pyc
+│       │   │   │   ├── elf.cpython-38.pyc
+│       │   │   │   ├── gdbinit.cpython-38.pyc
+│       │   │   │   ├── got.cpython-38.pyc
+│       │   │   │   ├── heap.cpython-38.pyc
+│       │   │   │   ├── hexdump.cpython-38.pyc
+│       │   │   │   ├── ida.cpython-38.pyc
+│       │   │   │   ├── __init__.cpython-38.pyc
+│       │   │   │   ├── leakfind.cpython-38.pyc
+│       │   │   │   ├── misc.cpython-38.pyc
+│       │   │   │   ├── nearpc.cpython-38.pyc
+│       │   │   │   ├── next.cpython-38.pyc
+│       │   │   │   ├── peda.cpython-38.pyc
+│       │   │   │   ├── pie.cpython-38.pyc
+│       │   │   │   ├── probeleak.cpython-38.pyc
+│       │   │   │   ├── procinfo.cpython-38.pyc
+│       │   │   │   ├── radare2.cpython-38.pyc
+│       │   │   │   ├── reload.cpython-38.pyc
+│       │   │   │   ├── rop.cpython-38.pyc
+│       │   │   │   ├── ropper.cpython-38.pyc
+│       │   │   │   ├── search.cpython-38.pyc
+│       │   │   │   ├── segments.cpython-38.pyc
+│       │   │   │   ├── shell.cpython-38.pyc
+│       │   │   │   ├── stack.cpython-38.pyc
+│       │   │   │   ├── start.cpython-38.pyc
+│       │   │   │   ├── telescope.cpython-38.pyc
+│       │   │   │   ├── theme.cpython-38.pyc
+│       │   │   │   ├── version.cpython-38.pyc
+│       │   │   │   ├── vmmap.cpython-38.pyc
+│       │   │   │   ├── windbg.cpython-38.pyc
+│       │   │   │   ├── xinfo.cpython-38.pyc
+│       │   │   │   └── xor.cpython-38.pyc
+│       │   │   ├── radare2.py
+│       │   │   ├── reload.py
+│       │   │   ├── ropper.py
+│       │   │   ├── rop.py
+│       │   │   ├── search.py
+│       │   │   ├── segments.py
+│       │   │   ├── shell.py
+│       │   │   ├── stack.py
+│       │   │   ├── start.py
+│       │   │   ├── telescope.py
+│       │   │   ├── theme.py
+│       │   │   ├── version.py
+│       │   │   ├── vmmap.py
+│       │   │   ├── windbg.py
+│       │   │   ├── xinfo.py
+│       │   │   └── xor.py
+│       │   ├── config.py
+│       │   ├── constants
+│       │   │   ├── aarch64.py
+│       │   │   ├── alpha.py
+│       │   │   ├── amd64.py
+│       │   │   ├── arm.py
+│       │   │   ├── constant.py
+│       │   │   ├── i386.py
+│       │   │   ├── ia64.py
+│       │   │   ├── __init__.py
+│       │   │   ├── mips.py
+│       │   │   ├── powerpc64.py
+│       │   │   ├── powerpc.py
+│       │   │   ├── ptmalloc.py
+│       │   │   ├── __pycache__
+│       │   │   │   ├── aarch64.cpython-38.pyc
+│       │   │   │   ├── amd64.cpython-38.pyc
+│       │   │   │   ├── arm.cpython-38.pyc
+│       │   │   │   ├── constant.cpython-38.pyc
+│       │   │   │   ├── i386.cpython-38.pyc
+│       │   │   │   ├── __init__.cpython-38.pyc
+│       │   │   │   ├── mips.cpython-38.pyc
+│       │   │   │   ├── ptmalloc.cpython-38.pyc
+│       │   │   │   └── thumb.cpython-38.pyc
+│       │   │   ├── s390.py
+│       │   │   ├── s390x.py
+│       │   │   ├── sparc64.py
+│       │   │   ├── sparc.py
+│       │   │   └── thumb.py
+│       │   ├── ctypes.py
+│       │   ├── decorators.py
+│       │   ├── disasm
+│       │   │   ├── arch.py
+│       │   │   ├── arm.py
+│       │   │   ├── __init__.py
+│       │   │   ├── jump.py
+│       │   │   ├── mips.py
+│       │   │   ├── ppc.py
+│       │   │   ├── __pycache__
+│       │   │   │   ├── arch.cpython-38.pyc
+│       │   │   │   ├── arm.cpython-38.pyc
+│       │   │   │   ├── __init__.cpython-38.pyc
+│       │   │   │   ├── jump.cpython-38.pyc
+│       │   │   │   ├── mips.cpython-38.pyc
+│       │   │   │   ├── ppc.cpython-38.pyc
+│       │   │   │   ├── sparc.cpython-38.pyc
+│       │   │   │   └── x86.cpython-38.pyc
+│       │   │   ├── sparc.py
+│       │   │   └── x86.py
+│       │   ├── dt.py
+│       │   ├── elf.py
+│       │   ├── elftypes.py
+│       │   ├── emu
+│       │   │   ├── emulator.py
+│       │   │   ├── __init__.py
+│       │   │   ├── __pycache__
+│       │   │   │   ├── emulator.cpython-38.pyc
+│       │   │   │   ├── __init__.cpython-38.pyc
+│       │   │   │   └── x86.cpython-38.pyc
+│       │   │   └── x86.py
+│       │   ├── enhance.py
+│       │   ├── events.py
+│       │   ├── exception.py
+│       │   ├── file.py
+│       │   ├── funcparser.py
+│       │   ├── functions.py
+│       │   ├── gcc.py
+│       │   ├── gdbutils
+│       │   │   ├── functions.py
+│       │   │   ├── __init__.py
+│       │   │   └── __pycache__
+│       │   │       ├── functions.cpython-38.pyc
+│       │   │       └── __init__.cpython-38.pyc
+│       │   ├── heap
+│       │   │   ├── dlmalloc.py
+│       │   │   ├── heap.py
+│       │   │   ├── __init__.py
+│       │   │   ├── ptmalloc.py
+│       │   │   └── __pycache__
+│       │   │       ├── dlmalloc.cpython-38.pyc
+│       │   │       ├── heap.cpython-38.pyc
+│       │   │       ├── __init__.cpython-38.pyc
+│       │   │       └── ptmalloc.cpython-38.pyc
+│       │   ├── hexdump.py
+│       │   ├── ida.py
+│       │   ├── info.py
+│       │   ├── __init__.py
+│       │   ├── inthook.py
+│       │   ├── jump
+│       │   │   ├── __init__.py
+│       │   │   └── __pycache__
+│       │   │       └── __init__.cpython-38.pyc
+│       │   ├── memoize.py
+│       │   ├── memory.py
+│       │   ├── net.py
+│       │   ├── next.py
+│       │   ├── proc.py
+│       │   ├── prompt.py
+│       │   ├── __pycache__
+│       │   │   ├── abi.cpython-38.pyc
+│       │   │   ├── android.cpython-38.pyc
+│       │   │   ├── arch.cpython-38.pyc
+│       │   │   ├── arguments.cpython-38.pyc
+│       │   │   ├── argv.cpython-38.pyc
+│       │   │   ├── auxv.cpython-38.pyc
+│       │   │   ├── chain.cpython-38.pyc
+│       │   │   ├── config.cpython-38.pyc
+│       │   │   ├── ctypes.cpython-38.pyc
+│       │   │   ├── decorators.cpython-38.pyc
+│       │   │   ├── dt.cpython-38.pyc
+│       │   │   ├── elf.cpython-38.pyc
+│       │   │   ├── elftypes.cpython-38.pyc
+│       │   │   ├── enhance.cpython-38.pyc
+│       │   │   ├── events.cpython-38.pyc
+│       │   │   ├── exception.cpython-38.pyc
+│       │   │   ├── file.cpython-38.pyc
+│       │   │   ├── funcparser.cpython-38.pyc
+│       │   │   ├── functions.cpython-38.pyc
+│       │   │   ├── gcc.cpython-38.pyc
+│       │   │   ├── hexdump.cpython-38.pyc
+│       │   │   ├── ida.cpython-38.pyc
+│       │   │   ├── info.cpython-38.pyc
+│       │   │   ├── __init__.cpython-38.pyc
+│       │   │   ├── inthook.cpython-38.pyc
+│       │   │   ├── memoize.cpython-38.pyc
+│       │   │   ├── memory.cpython-38.pyc
+│       │   │   ├── net.cpython-38.pyc
+│       │   │   ├── next.cpython-38.pyc
+│       │   │   ├── proc.cpython-38.pyc
+│       │   │   ├── prompt.cpython-38.pyc
+│       │   │   ├── qemu.cpython-38.pyc
+│       │   │   ├── regs.cpython-38.pyc
+│       │   │   ├── remote.cpython-38.pyc
+│       │   │   ├── search.cpython-38.pyc
+│       │   │   ├── stack.cpython-38.pyc
+│       │   │   ├── stdio.cpython-38.pyc
+│       │   │   ├── strings.cpython-38.pyc
+│       │   │   ├── symbol.cpython-38.pyc
+│       │   │   ├── typeinfo.cpython-38.pyc
+│       │   │   ├── ui.cpython-38.pyc
+│       │   │   ├── version.cpython-38.pyc
+│       │   │   ├── vmmap.cpython-38.pyc
+│       │   │   └── which.cpython-38.pyc
+│       │   ├── qemu.py
+│       │   ├── regs.py
+│       │   ├── remote.py
+│       │   ├── search.py
+│       │   ├── stack.py
+│       │   ├── stdio.py
+│       │   ├── strings.py
+│       │   ├── symbol.py
+│       │   ├── typeinfo.py
+│       │   ├── ui.py
+│       │   ├── version.py
+│       │   ├── vmmap.py
+│       │   ├── which.py
+│       │   └── wrappers
+│       │       ├── checksec.py
+│       │       ├── __init__.py
+│       │       ├── __pycache__
+│       │       │   ├── checksec.cpython-38.pyc
+│       │       │   ├── __init__.cpython-38.pyc
+│       │       │   └── readelf.cpython-38.pyc
+│       │       └── readelf.py
+│       ├── pytests_collect.py
+│       ├── pytests_launcher.py
+│       ├── README.md
+│       ├── requirements.txt
+│       ├── setup.cfg
+│       ├── setup.sh
+│       ├── tag_release.sh
+│       ├── tests
+│       │   ├── binaries
+│       │   │   ├── emulate_disasm.asm
+│       │   │   ├── emulate_disasm_loop.asm
+│       │   │   ├── emulate_disasm_loop.out
+│       │   │   ├── emulate_disasm.out
+│       │   │   ├── gosample.x64.go
+│       │   │   ├── gosample.x86.go
+│       │   │   ├── __init__.py
+│       │   │   ├── makefile
+│       │   │   ├── old_bash
+│       │   │   │   ├── binary
+│       │   │   │   ├── core
+│       │   │   │   └── __init__.py
+│       │   │   ├── reference-binary.c
+│       │   │   └── reference-binary.out
+│       │   ├── conftest.py
+│       │   ├── __init__.py
+│       │   ├── test_emulate.py
+│       │   ├── test_go.py
+│       │   ├── test_loads.py
+│       │   ├── test_memory.py
+│       │   └── test_misc.py
+│       └── tests.sh
+├── Videos
+└── Workplace
+    ├── cpp
+    │   ├── Kruskal.cpp
+    │   └── qsort.cpp
+    ├── html
+    ├── java
+    ├── linux
+    │   ├── linux_tip
+    │   └── tree_file
+    └── pyhton
+
+105 directories, 738 files
