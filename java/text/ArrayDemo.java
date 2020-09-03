@@ -44,5 +44,6 @@ public class ArrayDemo{
         System.out.println(stu.get(2));
         System.out.println("=================================================");
         System.out.println(Arrays.toString(stu.toArray()));
+
     }
 }
