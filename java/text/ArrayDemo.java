@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /*************************************************************************
@@ -7,7 +8,7 @@ import java.util.Arrays;
   > Created Time: Mon 03 Aug 2020 11:29:09 AM CST
  ************************************************************************/
 
-public class Array{
+public class ArrayDemo{
     public static void main(String[] args){
         // first method
         int[] a = new int[5];
@@ -29,5 +30,19 @@ public class Array{
         System.out.println();
         
         System.out.println(Arrays.toString(new int[]{11,22,33,44,55,66,77,88,99}));
+    
+
+        ArrayList<Student> stu = new ArrayList<Student>();
+        stu.add(new Student("first", 10, "Computer-Science", 100.0));
+        stu.add(new Student("second", 20, "Computer-Science", 90.0)); 
+        stu.add(new Student("third", 30, "Computer-Science", 80.0));
+        for(Student stui : stu)
+            System.out.println(stui.toString());
+
+        System.out.println(stu.size());
+        stu.set(2, new Student("four",40,"doctor",70.0));
+        System.out.println(stu.get(2));
+        System.out.println("=================================================");
+        System.out.println(Arrays.toString(stu.toArray()));
     }
 }
