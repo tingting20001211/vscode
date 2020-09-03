@@ -31,11 +31,3 @@ public class Demo1{
         System.out.println(t.hashCode() + "= ? =" + tb.hashCode()); // 2556= ? =1523554304
     }
 }
-
-/*
-private class Demo2{
-    public static void main(String[] args){
-        System.out.println("demo2"+pi);
-    }
-}
-*/
