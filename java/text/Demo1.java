@@ -29,5 +29,7 @@ public class Demo1{
         String t = new String("Ok");
         StringBuilder tb = new StringBuilder(t);
         System.out.println(t.hashCode() + "= ? =" + tb.hashCode()); // 2556= ? =1523554304
+    
+        System.out.println(tb.getClass().getName());
     }
 }
